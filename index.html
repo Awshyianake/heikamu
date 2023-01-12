@@ -94,15 +94,15 @@ p{margin:1.5em 0;transition:all .3s ease;}
 
 <!-- Pesan -->
 <p><b><img src="https://feeldreams.github.io/cilukba.gif"/><br>
-	<span>Hai kamu! 😆</span>
+	<span>Hallo Ayang! 😆</span>
 </b></p>
 
 <p><b><img src="https://feeldreams.github.io/mndkat.gif"/><br>
-	<span>Aku mau ngomong sesuatu nih 🤭</span>
+	<span>Aku mau ngomong sesuatu nih ama mey 🤭</span>
 </b></p>
 
 <p><b><img src="https://feeldreams.github.io/gigitin.gif"/><br>
-	<span>Tapi singkat aja yaa 🤣</span>
+	<span>Tapi singkat aja yaah ayang 🤣</span>
 </b></p>
 
 <p><b><img src="https://feeldreams.github.io/g5.gif"/><br>
@@ -110,7 +110,7 @@ p{margin:1.5em 0;transition:all .3s ease;}
 </b></p>
 
 <!-- Tombol Akhir --><p><b><img id="fotolove" src="https://maafin.feeldream.repl.co/love.gif" onClick="akhiran();"/><br>
-	<span>Klik LOVE-nya dulu</span>
+	<span>Klik LOVE-nya dulu ish</span>
 </b></p>
 
 </div></div>
@@ -143,7 +143,7 @@ p{margin:1.5em 0;transition:all .3s ease;}
   const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040',}); const swalsy = Swal.mixin({confirmButtonText: 'Iya', allowOutsideClick: false,}); const swalst = Swal.mixin({allowOutsideClick: false, showConfirmButton: false, timer: 1000, timerProgressBar: true, didOpen: () => {Swal.showLoading();const b = Swal.getHtmlContainer().querySelector('b');timerInterval = setInterval(() => {Swal.getTimerLeft()}, 100)},willClose: () => {clearInterval(timerInterval)}}); const style = document.createElement('style');
   function play() {var audio = new Audio('' + linkmp3);audio.play();} const body = document.querySelector("body");function createHeart() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
   function akhiran(){fungsi=1;Tombol.style="transition:all 0s ease;opacity:0;transform: scale(.1);";imgakhir.style="opacity:1;height:100px;";Content.style = "opacity:1;margin-top:5vh;animation:none 3s infinite;";bodyblur.style="opacity:.4;animation:none";beneranblur.style="-webkit-backdrop-filter:blur(5px); backdrop-filter:blur(5px)";wallpaper.style="transform: scale(1.6)";pergeseran.style="display:none";idgeser.innerHTML = "";idgeser.style = "opacity:1;transform: scale(1);font-weight:400;margin-top:15px;";setTimeout(aksiakhir,800);}
-  async function menuju(){await swals.fire('OK!', 'Kirim pesan ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
+  async function menuju(){await swals.fire('OK!', 'Kirim pesan ke WhatsApp isun, ya ayang!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
   var aa=0,akhirkata;var ai=0,pesanterakhir;function aksiakhir() {if(aa<akhirkata.length){idgeser.innerHTML += akhirkata.charAt(aa);aa++;setTimeout(aksiakhir,65);}
     if(aa==akhirkata.length){setTimeout(showpalingakhir,300);}} 
    function aksiakhir2() {if(ai<pesanterakhir.length){idkalimat.innerHTML += pesanterakhir.charAt(ai);ai++;setTimeout(aksiakhir2,100);}
@@ -167,14 +167,14 @@ p{margin:1.5em 0;transition:all .3s ease;}
 
 <script type="text/javascript">
        async function pertama(){
-            akhirkata = "Aku kangen banget sama kamu, hehe...   ";
-            palingakhir.innerHTML = "Kalo kamu kangen ga sama Aku? 🤭❤️";
+            akhirkata = "isun kangen banget sama ayang mey, hehe...   ";
+            palingakhir.innerHTML = "Kalo ayang kangen ga sama isun? 🤭❤️";
             
             pesanakhir1 = "Yeayyyy!";
-            pesanakhir2 = "Makasii udah jawab kangen >.<";
-            pesanterakhir = "I Love You ❤️";
+            pesanakhir2 = "Makasii ayang udah jawab kangen >.<";
+            pesanterakhir = "I Love You Ayang Mey❤️";
             
-            pesanwhatsapp = "Aku kangen juga kok sama kamu ><";
+            pesanwhatsapp = "Mey juga kangen kok sama ayang isun, ku kirim pap yah sm morning kissnya yah ayang 🤭 ><";
             
             await swalst.fire('Tunggu');lanjut();
         }
